@@ -14,7 +14,7 @@ jQuery.trumbowyg = {
 
             bold: 'Bold',
             italic: 'Italic',
-            strikethrough: 'Stroke',
+            strikethrough: 'Strikethrough',
             underline: 'Underline',
 
             strong: 'Strong',
@@ -88,7 +88,7 @@ Object.defineProperty(jQuery.trumbowyg, 'defaultOptions', {
             ['viewHTML'],
             ['undo', 'redo'], // Only supported in Blink browsers
             ['formatting'],
-            ['strong', 'em', 'del'],
+            ['strong', 'em', 'strikethrough'],
             ['superscript', 'subscript'],
             ['link'],
             ['insertImage'],
@@ -324,7 +324,7 @@ Object.defineProperty(jQuery.trumbowyg, 'defaultOptions', {
                 tag: 'u'
             },
             strikethrough: {
-                tag: 'strike'
+                tag: 's'
             },
 
             strong: {
@@ -440,8 +440,7 @@ Object.defineProperty(jQuery.trumbowyg, 'defaultOptions', {
         DEFAULT_SEMANTIC_MAP: {
             'b': 'strong',
             'i': 'em',
-            's': 'del',
-            'strike': 'del',
+            'strike': 's',
             'div': 'p'
         },
 
